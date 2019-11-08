@@ -1,0 +1,203 @@
+ /*	Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+-------------------------------------------------------------------------- */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+/* Make box-sizing "border-box" as default */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* MAIN TAGS */
+body{
+  margin: 0;
+  padding: 0;
+}
+#menu{
+  position: relative;
+  background-color: rgba(30, 30, 30, 0.95);
+}
+#menu li{
+  list-style: none;
+  display: inline-block;
+  
+}
+#menu li a{
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+  font-size: .875rem;
+  font-family: 'Arial';
+  display: block;
+  overflow: hidden;
+  transition: 0.7s all;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  margin-left: 30px;
+  padding-right: 30px;
+  padding-top: 2.4rem;
+  
+  
+}
+#menu li a:before{
+  content: '';
+  width: 40px;
+  position: absolute;
+  border-bottom: 4px solid #eb003b;
+  bottom: 0;
+  right: 150px;
+  transition: 0.8s all;
+  outline-color: white 2px;
+  color: transparent;
+}
+#menu li a:hover:before{
+  right: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background-color: #eb003b;
+  width: 100px;
+  margin-left: 25px;
+  padding-top: 80px;
+}
+
+.logo img {
+  width:100%;
+}
+
+
+h1{
+  font-size: 60px;
+  font-family: 'Karla', sans-serif;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.slider-frame{
+  overflow: hidden;
+  height: 800px;
+  width: 1200px;
+  margin-left: 360px;
+  margin-top: 20px;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes slide{
+  0%{
+    left: 0;
+  }
+  10%{
+    left: 0;
+  }
+  20%{
+    left: -100%;
+  }
+  30%{
+    left: -100%;
+  }
+  40%{
+    left: -200%;
+  }
+  50%{
+    left: -200%;
+  }
+  60%{
+    left: -300%;
+  }
+  70%{
+    left: -300%;
+  }
+  80%{
+    left: -400%;
+  }
+  90%{
+    left: -400%;
+  }
+  100%{
+    left: 0;
+  }
+}
+
+#slider {
+  overflow: hidden;
+
+  margin-top: 15.6rem;
+}
+
+#slider figure img {
+  float: left;
+  width: 25%;
+}
+
+#slider figure{
+  position: relative;
+  width: 400%;
+  animation: slide 15s infinite;
+
+}
+
+#main-menu {
+  display: flex;
+  justify-content: flex-end;
+  /* margin-top: 100px;
+  margin-right: 50px; */
+  margin-right: 2rem;
+}
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+}
+
+.title-name {
+  font-family: 'Anton', sans-serif;
+  font-size: 72px;
+  color: #fff;
+  letter-spacing: 1px;
+  border-top: white solid 2px;
+  border-bottom: white solid 2px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 26rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 13rem;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  opacity: 80%;
+}
+
+.snooker-rules {
+  background: #f5f5f5;
+  padding: 2em 4%;
+  margin-bottom: 3em;
+}
+
+#h1-id-snooker {
+  background-color: red;
+  display: inline;
+  font-size: 42px;
+  padding: 1px 2px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+
+}
+
+p {
+  margin-top: 20px;
+}

@@ -6,6 +6,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* Make box-sizing "border-box" as default */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -16,7 +17,35 @@ html {
 body{
   margin: 0;
   padding: 0;
+  color: #fff;
 }
+
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 60px;
+  font-family: 'Karla', sans-serif;
+  font-weight: lighter;
+  /* color: #fff; */
+}
+
+p {
+  /* color: #fff; */
+  margin-top: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  line-height: 1.5rem;
+}
+
 #menu{
   position: relative;
   background-color: rgba(30, 30, 30, 0.95);
@@ -34,23 +63,22 @@ body{
   font-family: 'Arial';
   display: block;
   overflow: hidden;
-  transition: 0.7s all;
-  padding-bottom: 40px;
+  transition: 0.6s all;
+  padding-bottom: 37.3px;
   text-transform: uppercase;
-  margin-left: 30px;
-  padding-right: 30px;
+  margin-left: 70px;
   padding-top: 2.4rem;
   
   
 }
 #menu li a:before{
   content: '';
-  width: 40px;
+  width: 80px;
   position: absolute;
   border-bottom: 4px solid #eb003b;
   bottom: 0;
   right: 150px;
-  transition: 0.8s all;
+  transition: 0.6s all;
   outline-color: white 2px;
   color: transparent;
 }
@@ -68,16 +96,9 @@ body{
   padding-top: 80px;
 }
 
+
 .logo img {
   width:100%;
-}
-
-
-h1{
-  font-size: 60px;
-  font-family: 'Karla', sans-serif;
-  font-weight: lighter;
-  color: #fff;
 }
 
 .slider-frame{
@@ -86,12 +107,6 @@ h1{
   width: 1200px;
   margin-left: 360px;
   margin-top: 20px;
-}
-
-
-*{
-  margin: 0;
-  padding: 0;
 }
 
 @keyframes slide{
@@ -132,8 +147,11 @@ h1{
 
 #slider {
   overflow: hidden;
-
-  margin-top: 15.6rem;
+  opacity: 80%;
+  /* margin-top: 15.6rem; */
+  margin-bottom: 15.6rem;
+  border-top: solid 4px #eb003b;
+  border-bottom: solid 4px #eb003b;
 }
 
 #slider figure img {
@@ -153,7 +171,8 @@ h1{
   justify-content: flex-end;
   /* margin-top: 100px;
   margin-right: 50px; */
-  margin-right: 2rem;
+  margin-right: 4rem;
+  height: 90px;
 }
 #video-background {
   position: fixed;
@@ -164,40 +183,183 @@ h1{
   z-index: -1;
 }
 
+.title-container {
+  height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .title-name {
   font-family: 'Anton', sans-serif;
   font-size: 72px;
-  color: #fff;
+  /* color: #fff; */
   letter-spacing: 1px;
   border-top: white solid 2px;
   border-bottom: white solid 2px;
-  text-align: center;
-  display: inline-block;
-  margin-left: 26rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-top: 13rem;
+  /* text-align: center; */
+  /* display: inline-block; */
+  /* margin-left: 26rem; */
+  /* padding-top: 1rem; */
+  /* padding-bottom: 1rem; */
+  /* margin-top: 13rem; */
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
   opacity: 80%;
 }
 
 .snooker-rules {
-  background: #f5f5f5;
+  background: black;
   padding: 2em 4%;
   margin-bottom: 3em;
+  /* flex
+  opacity: 80%; */
+  border-top: #eb003b solid .2rem;
+  padding-top: 0;
+  opacity: 85%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+
+
+.snooker-rules article ul {
+  list-style: inherit;
+  margin-left: 4%;
+  
+}
+
+.snooker-rules .title-snooker-rules-container {
+  display: flex;
+  justify-content: center;
 }
 
 #h1-id-snooker {
-  background-color: red;
   display: inline;
-  font-size: 42px;
+  font-size: 72px;
   padding: 1px 2px;
   font-family: 'Anton', sans-serif;
   letter-spacing: 1px;
-
+  border-top: 0.5rem solid #eb003b;
+  padding-top: 10px;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
 }
 
-p {
+.snooker-rules-p {
+  margin-top: 10px;
+  border-top: 2px solid #eb003b ;
+  padding-top: 10px;
+}
+
+.snooker-rules-p2 {
+  border-bottom: 2px solid #eb003b ;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.object-of-the-game {
+  padding-top: 10px;
+  font-family: 'Anton', sans-serif;
+  font-size: 38px;
+  border-bottom: 4px solid #eb003b;
+  display: inline;
+}
+
+.object-of-the-game-p {
   margin-top: 20px;
+  border-bottom: 2px solid #eb003b ;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.players-equipment {
+  padding-top: 10px;
+  font-family: 'Anton', sans-serif;
+  font-size: 38px;
+  border-bottom: 4px solid #eb003b;
+  display: inline;
+}
+
+.players-equipment-p {
+  padding-top: 5px;
+  border-bottom: 2px solid #eb003b ;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.scoring {
+  padding-top: 10px;
+  font-family: 'Anton', sans-serif;
+  font-size: 38px;
+  border-bottom: 4px solid #eb003b;
+  display: inline;
+}
+
+.scoring-p {
+  border-bottom: 2px solid #eb003b ;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.winning-the-game {
+  padding-top: 10px;
+  font-family: 'Anton', sans-serif;
+  font-size: 38px;
+  border-bottom: 4px solid #eb003b;
+  display: inline;
+}
+
+.winning-the-game-p {
+  border-bottom: 2px solid #eb003b ;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.rules-of-snooker {
+  padding-top: 10px;
+  font-family: 'Anton', sans-serif;
+  font-size: 38px;
+  border-bottom: 4px solid #eb003b;
+  display: inline;
+}
+
+.rules-of-snooker-ul {
+  margin-top: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  line-height: 1.5rem;
+  border-bottom: 2px solid #eb003b ;
+  padding-bottom: 10px;
+  list-style-type: disc;
+  margin-left: 30px;
+}
+/* POOL RULES */
+.pool-rules {
+  background: black;
+  padding: 2em 4%;
+  margin-bottom: 3em;
+  /* flex
+  opacity: 80%; */
+  border-top: #eb003b solid .2rem;
+  padding-top: 0;
+  opacity: 85%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+#h1-id-pool .pool-rules{
+  display: inline;
+  font-size: 72px;
+  padding: 1px 2px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+  border-top: 0.5rem solid #eb003b;
+  padding-top: 10px;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+}
+.title-pool-rules-container{
+  display: flex;
+  justify-content: center;
 }

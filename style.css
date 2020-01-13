@@ -61,8 +61,9 @@ p {
   text-decoration: none;
   position: relative;
   color: #fff;
-  font-size: .875rem;
-  font-family: 'Arial';
+  font-size: .960rem;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.5px;
   display: block;
   overflow: hidden;
   transition: 0.6s all;
@@ -179,7 +180,7 @@ p {
   
 }
 
-#video-background {
+.background-image{
   position: fixed;
   right: 0;
   bottom: 0;
@@ -214,6 +215,8 @@ p {
 }
 
 .snooker-rules {
+  max-width: 680px;
+  margin: auto;
   background: black;
   padding: 2em 4%;
   margin-bottom: 3em;
@@ -342,16 +345,31 @@ p {
 }
 /* POOL RULES */
 .pool-rules {
+  max-width: 680px;
+  margin: auto;
   background: black;
   padding: 2em 4%;
   margin-bottom: 3em;
   /* flex
   opacity: 80%; */
   border-top: #eb003b solid .2rem;
+  border-bottom: #eb003b solid .2rem;
   padding-top: 0;
   opacity: 85%;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
+}
+
+#h1-id-pool {
+  display: inline;
+  font-size: 72px;
+  padding: 1px 2px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+  border-top: 0.5rem solid #eb003b;
+  padding-top: 10px;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
 }
 
 #h1-id-pool .pool-rules{
@@ -373,7 +391,11 @@ p {
 .button{
   justify-content: center;
   display: flex;
-  
+}
+
+.button-pool{
+  justify-content: center;
+  display: flex;
 }
 
 

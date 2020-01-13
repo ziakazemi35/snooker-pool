@@ -8,6 +8,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
   <title>Snooker & Pool</title>
@@ -18,14 +19,14 @@
 <!-- BODY START -->
 
 <body>
-  <!-- VIDEO BACKGROUND -->
-  <video autoplay muted loop id="video-background">
-    <source src="images/Background-video.mp4" type="video/mp4">
-  </video>
+  <!-- BACKGROUND IMAGE -->
+  <div class="background-image">
+  <img src="images/background-image.jpg" alt="background-image">
+  </div>
   <!--Navigation bar-->
 
   <header id="menu" class="header-class">
-    <a class="logo" href="#s-p-logo"><img src="images/logo/s-p-logo.png" alt="s-p-logo"></a>
+    <a href="#" class="logo" href="#s-p-logo"><img src="images/logo/s-p-logo.png" alt="s-p-logo"></a>
     <nav id="main-menu" class="nav-bar">
       <li><a href="#section1">Snooker</a></li>
       <li><a href="#section2">Pool</a></li>
@@ -210,12 +211,13 @@
           </ul>
         </article>
       </section>
-      <!--END READ MORE-->
+      
       <!--READ MORE BUTTONS-->
       <div class="button">
         <button class="btn-readmore">READ MORE</button>
         <button class="btn-readmore read-more-hidden">LESS</button>
       </div>
+      <!--END READ MORE-->
       <!-- ARTICLE -->
     </section>
     <!---------- POOL RULES ---------->
@@ -241,6 +243,8 @@
           probably the game’s finest era.
         </p>
       </article>
+      <!-- READ MORE CONTAINER-->
+      <section class="read-more-container read-more-hidden">
       <article>
 
         <h1 class="object-of-the-game">Object of the Game</h1>
@@ -356,11 +360,17 @@
           </li>
         </ul>
       </article>
+      <!--READ MORE BUTTONS-->
+      <div class="button-pool">
+        <button class="btn-pool-readmore">READ MORE</button>
+        <button class="btn-readmore read-more-hidden">LESS</button>
+      </div>
+      <!--END READ MORE-->
     </section>
     <!-- SECTION -->
   </main>
-  <!-- MAIN -->
-  <!-- my scripts-->
+  <!-- MAIN END -->
+  <!-- SCRIPTS-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
   <script src="app.js"></script>
 </body>
